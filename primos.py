@@ -1,5 +1,6 @@
-def primos():
-    numero = int(input('Digite um numero para saber se é primo: '))
+num = 0
+numero = int(input('Digite um numero para saber se é primo: '))
+def primos(num):
     divisor = 1
     cont = 1
    
@@ -18,6 +19,8 @@ def primos():
             break
 
         divisor += 1
-        
 
-primos()
+
+for n in range(1,numero+1):
+    numero = n
+    primos(n)
